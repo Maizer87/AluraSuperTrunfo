@@ -21,7 +21,7 @@ var cartas = [
     ,
     carta3 = {
         nome: "Shiryu de Dragão",
-        iamgem: "https://i.ytimg.com/vi/vN6Jun3D0Tg/hqdefault.jpg",
+        imagem: "https://i.ytimg.com/vi/vN6Jun3D0Tg/hqdefault.jpg",
         atributos: {
             ataque: 5,
             defesa: 9,
@@ -37,7 +37,7 @@ function sortearCarta() {
     var numeroCartaMaquina = parseInt(Math.random() * 3);
     cartaMaquina = cartas[numeroCartaMaquina];    
 
-    var numeroCartaJogador = parseInt(Math.random() * 3);
+    var numeroCartaJogador = 2; //parseInt(Math.random() * 3);
     while (numeroCartaMaquina == numeroCartaJogador) {
         numeroCartaJogador = parseInt(Math.random() * 3);
     }
